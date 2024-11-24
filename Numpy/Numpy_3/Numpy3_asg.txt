@@ -1,0 +1,145 @@
+numpy 3 assignment questions 2d arrays:
+
+1)
+Given an array in form of a matrix of size (n, n), rotate the matrix clockwise by 90º.
+
+Input Format:
+A 2d numpy array
+Output Format:
+A 2d numpy array
+
+Sample Input:
+
+[[1 2 3] 
+ [4 5 6]
+ [7 8 9]]
+Sample Output:
+
+[[7 4 1]
+ [8 5 2]
+ [9 6 3]]
+
+Note: Try Transpose / reversing.
+----------------------------------------------------------------
+2)
+Problem Description:
+
+Given a list of birds and their corresponding age, return the name of birds sorted according to age (ascending)
+Input Format:
+
+Two 1D array list i.e. bird array and age array
+Output Format:
+
+A 1D array
+Sample Input:
+
+birds = ['spoonbills',  'plovers',  'plovers',  'plovers',  'plovers',  'Cranes',  'plovers',  'plovers',  'Cranes',  'spoonbills']
+age = [5.5, 6.0, 3.5, 1.5, 3.0, 4.0, 3.5, 2.0, 5.5, 6.0]
+Sample Output:
+
+['plovers', 'plovers', 'plovers', 'plovers', 'plovers', 'Cranes', 'spoonbills', 'Cranes', 'plovers', 'spoonbills']
+
+Side Note: Recall the functionality of .sort() and .argsort()
+
+----------------------------------------------------------------
+3)
+Problem Description:
+
+Given a M x N array, Perform the following operations:
+1. Get the odd rows from the array i.e. 1st, 3rd, 5th etc..
+2. Convert the above result into 1D array and return it.
+Input Format:
+
+A 2D numpy array
+Output Format:
+
+A 1D numpy array
+Sample Input:
+
+[[1, 2, 3] 
+ [4, 5, 6]
+ [7, 8, 9]]
+Sample Output:
+
+[1, 2, 3, 7, 8, 9]
+----------------------------------------------------------------
+4)
+Problem Statement:
+
+Given a 2D numpy array, return array with its values in the column reversed.
+Input Format:
+
+A 2D numpy array
+Output Format:
+
+A 2D numpy array
+Sample Input:
+
+[[0, 1, 2], 
+ [3, 4, 5], 
+ [6, 7, 8]]
+Sample Output:
+
+[[2, 1, 0], 
+ [5, 4, 3], 
+ [8, 7, 6]]
+P.S : Think about how we reverse list in python.
+----------------------------------------------------------------
+5)
+Problem Statement:
+
+Given a 2d array, write a program to return a subarray such that the subarray consists of the elements from:
+
+1. the second to the fourth row of the original array,
+
+2. the elements in these rows should be from the last three columns of the corresponding rows of the original array,
+
+3. the rows should be in reversed order.
+
+Sample Input:
+
+[[ 0,  1,  2,  3],  
+ [ 4,  5,  6,  7],   
+ [ 8,  9, 10, 11],   
+ [12, 13, 14, 15],   
+ [16, 17, 18, 19]]
+Sample Output:
+
+array([[13, 14, 15],  
+       [ 9, 10, 11], 
+       [ 5,  6,  7]])
+Input Format:
+
+A 2D list
+Output Format:
+A 2D numpy array
+Note:
+
+This question can be solved using negative indexing and slicing
+----------------------------------------------------------------
+6)
+Given a NumPy matrix of shape (n, n), remove all the odd elements from the matrix and return a new matrix of shape (k, k) consisting of all the remaining even elements from the original matrix.
+
+Input Format:
+
+A 2d list is taken as input which is first typecasted to a NumPy array and then passed to the function as argument.
+Output Format:
+
+2d NumPy array is printed
+Sample Input:
+
+[[ 7, 4, 8, 5, 1],  
+ [ 8, 0, 11, 3, 5],  
+ [ 9, 6, 3, 5, 0],  
+ [ 1, 5, 7, 3, 2],  
+ [ 4, 7, 2, 9, 1]]
+Sample Output:
+
+[[4 8 8]  
+ [0 6 0]  
+ [2 4 2]]
+Sample Explanation:
+
+In the 5x5 matrix when we removed all the odd numbers we were left with 9 numbers, and hence 9 numbers can be converted to (3x3).
+Note: Assume that the number of even elements in the given matrix will always be a perfect square. Also observe that the relative order of elements
+ in the new matrix is preserved as it was in the original matrix i.e. the first 4 is before 8 in the matrix as it was in the original matrix.
